@@ -6,18 +6,16 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Homepage</title>
   </head>
-  <header>
-    <h1>Happy Valley Dog Adoption</h1>
-    <nav>
-      <li><a href="adopt.html">Adopt</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </nav>
-  </header>
   <body>
-    <h1>Happy Valley Dog Adoption</h1>
-    <div>
-      <img src="../images/dog-hero.jpg" alt="dog picture" />
-    </div>
+  <Header>
+    <h1 id="title">Happy Valley Dog Adoption</h1>
+    <nav class="navigation">
+      <a href="adopt.html" class="menu">Adopt</a>
+      <a href="contact.html" class="menu">Contact Us</a>
+    </nav>
+  </Header>
+      <img src="../images/dog-hero.jpg" alt="dog picture" class="dog-hero" />
+  <main class="homeparagraph">
     <p>
       Happy Valley Shelter has been finding safe and loving homes for dogs in
       the Piedmont area since 1989. We work in cooperation with local county
@@ -35,12 +33,11 @@
       successful adoption. We believe that every dog deserves a loving home, and
       we work tirelessly to make that a reality.
     </p>
+  </main>
   </body>
   <footer>
-    <nav>
-      <a href="donate.html"><img src="images/donate.jpg" alt="hands with money" />
-      <a href="volunteer.html"><img src="images/volunteer.jpg" alt="Man with dogs" />
-      <a href="location.html"><img src="images/location.png" alt="map" /> 
-    </nav>
-  </footer>
+    <div class="page donate"><a href="donate.html" title="donate"></a>Donate</div>
+    <div class="page volunteer"><a href="volunteer.html" title="volunteer"></a>Volunteer</div>
+    <div class="page location"><a href="location.html" title="Location"></a>Location</div>
+</footer>
 </html>

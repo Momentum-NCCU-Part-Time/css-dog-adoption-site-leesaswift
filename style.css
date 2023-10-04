@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600&display=swap');
 
-* {
+body {
 margin: 0;
-padding: 0;
 box-sizing: border-box;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+
+/*Header for pages*/
 }
 header {
     font-family: Oswald;
@@ -12,5 +21,123 @@ header {
     color: white;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100vw;
+
+
+}
+
+/*title for all pages*/
+
+#title {
+    padding-left: 25px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+
+/*Homepage*/
+
+.dog-hero {
+    left: 0px;
+    right: 0px;
+    top: 90px;
+    padding: 0px;
+    width: 100vw;
+}
+
+.homeparagraph {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-family: Open Sans; 
+
+}
+
+
+.dog-list { /*dog flex container*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dog {
+    font-family: 'Open Sans';
+    border-style: solid;
+    border-radius: 5px;
+    border-color: lightgrey;
+    border-width: 2px;
+    padding: 1ex;
+    margin: 1ex;
+}
+
+.dog-name {
+    font-family: 'Oswald';
+    padding-bottom: 15px;
+}
+
+.dog-traits-list { /*Traits flex container*/
+    display: flex;
+    flex-flow: row wrap;
+    width: 31vh;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.dog-traits-item {
+    display: inline;
+    background: #89DEEF;
+    border-style: solid;
+    border-color: #89DEEF;
+    border-width: 5px;
+    border-radius: 1em;
+    margin: 5px;
+}
+
+/*Footer on Every Page*/
+
+ footer{
+    display: flex;
+    height: 15rem;
+    border: 2px solid red;
+}
+
+.page {
+    display: flex;
+    width: 33.4%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Oswald;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.donate {
+    background:linear-gradient( rgba(85, 85, 240, 0.5),
+    rgba(85, 85, 240, 0.5)), 
+    url(images/donate.jpg);
+}
+
+.volunteer {
+    background:linear-gradient( rgba(85, 85, 240, 0.5),
+    rgba(85, 85, 240, 0.5)), 
+    url(images/volunteer.jpg);
+}
+
+.location {
+    background:linear-gradient( rgba(85, 85, 240, 0.5),
+    rgba(85, 85, 240, 0.5)), 
+    url(images/location.png);
 }
