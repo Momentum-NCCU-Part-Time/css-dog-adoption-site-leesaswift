@@ -64,10 +64,24 @@ nav a {
 
 }
 
+/*Adopt a Dog*/
 
-.dog-list { /*dog flex container*/
+.dog-adoption {
+    margin-left: 2rem;
+    font-family: Open Sans;
+}
+
+
+
+
+.dog-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 1.5rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+    justify-items: space-evenly;
+    align-items: stretch;
 }
 
 .dog {
@@ -78,6 +92,7 @@ nav a {
     border-width: 2px;
     padding: 1ex;
     margin: 1ex;
+    margin-right: 2ex;
 }
 
 .dog-name {
@@ -85,7 +100,7 @@ nav a {
     padding-bottom: 15px;
 }
 
-.dog-traits-list { /*Traits flex container*/
+.dog-traits-list { 
     display: flex;
     flex-flow: row wrap;
     width: 31vh;
@@ -103,12 +118,35 @@ nav a {
     margin: 5px;
 }
 
+/*Contact Us*/
+
+h2 {
+    margin-left: 3rem;
+    font-family: Open Sans;
+}
+
+.contact-info {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-family: Open Sans;
+}
+
+.hours-info {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    font-family: Open Sans;
+}
+
 /*Footer on Every Page*/
 
  footer{
     display: flex;
-    height: 15rem;
-    border: 2px solid red;
+    height: 20rem;
 }
 
 .page {
@@ -128,16 +166,19 @@ nav a {
     background:linear-gradient( rgba(85, 85, 240, 0.5),
     rgba(85, 85, 240, 0.5)), 
     url(images/donate.jpg);
+    background-size: cover;
 }
 
 .volunteer {
     background:linear-gradient( rgba(85, 85, 240, 0.5),
     rgba(85, 85, 240, 0.5)), 
     url(images/volunteer.jpg);
+    background-size: cover;
 }
 
 .location {
     background:linear-gradient( rgba(85, 85, 240, 0.5),
     rgba(85, 85, 240, 0.5)), 
     url(images/location.png);
+    background-size: cover;
 }
